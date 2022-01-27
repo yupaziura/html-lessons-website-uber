@@ -38,10 +38,19 @@
 .subheader {
     height: 87px;
     background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+.subheader .subheader_bck {
+    position: absolute;
+    width: 1920px;
+    height: 799px;
+    z-index: -1;
 }
 
 .subheader .row {
     padding-top: 20px;
+    z-index: 2;
 }
 
 .subheader_logo_text {
@@ -73,6 +82,50 @@
     border: 0;
     font-weight: normal;
     font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+/* MAIN SECTION */
+
+.main_header {
+    margin-top: 67px;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main_subheader {
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main_text {
+    margin-top: 16px;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.main_btn {
+    display: block;
+    margin: 115px auto;
+    width: 259px;
+    height: 63px;
+    border: 0;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
