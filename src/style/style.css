@@ -1,0 +1,79 @@
+* {
+    font-family: Roboto;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+/* HEADER */
+
+.header .container {
+    display: flex;
+    justify-content: space-around;
+    height: 53px;
+}
+
+.header {
+    height: 53px;
+    background: #212121;
+}
+
+.header a {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 30px 0 30px;
+    border-right: 3px dotted black;
+}
+
+/* SUBHEADER */
+
+.subheader {
+    height: 87px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.subheader .row {
+    padding-top: 20px;
+}
+
+.subheader_logo_text {
+    font-weight: 100;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.subheader_tel_text {
+    font-weight: 300;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.subheader_tel {
+    font-weight: normal;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subheader_btn {
+    width: 172px;
+    height: 46px;
+
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: 0;
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
