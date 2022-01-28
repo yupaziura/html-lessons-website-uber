@@ -165,8 +165,10 @@ header {
     height: 116px;
     background: #1EACC7;
     border-radius: 100%;
-    display: inline-block;
     margin-right: 25px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
 }
 
 .reason_text {
@@ -175,6 +177,7 @@ header {
     align-items: center;
     display: inline-block;
     width: 371px;
+    align-self: top;
 }
 
 .reason_text span {
@@ -182,12 +185,12 @@ header {
 }
 
 .reason_img {
-    margin: 25px 20px 25px 20px;
+    display: block;
+    align-self: center;
 }
 
 .reason .col-6 {
     margin-top: 16px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
