@@ -47,7 +47,7 @@ header {
     height: 87px;
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
-    width:100%;
+    width: 100%;
     top: 53px;
 }
 
@@ -99,7 +99,7 @@ header {
 .main {
     background: url(../img/background/uber_bg.png) center center/cover no-repeat;
     min-height: 800px;
-    
+
 }
 
 .main_header {
@@ -142,4 +142,52 @@ header {
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+/* REASON SECTION */
+
+.reason {
+    min-height: 850px;
+    margin-bottom: 76px;
+}
+
+.reason_header {
+    margin-top: 77px;
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.reason_icon {
+    width: 116px;
+    height: 116px;
+    background: #1EACC7;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.reason_text {
+    font-weight: normal;
+    font-size: 17px;
+    align-items: center;
+    display: inline-block;
+    width: 371px;
+}
+
+.reason_text span {
+    color: #1EACC7;
+}
+
+.reason_img {
+    margin: 25px 20px 25px 20px;
+}
+
+.reason .col-6 {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
