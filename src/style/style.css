@@ -6,7 +6,12 @@
     max-width: 1140px;
 }
 
+
 /* HEADER */
+
+header {
+    position: relative;
+}
 
 .header .container {
     display: flex;
@@ -15,12 +20,11 @@
 }
 
 .header {
-    display: block;
-    position: fixed;
+    width: 100%;
+    /* display: block;
+    position: fixed; */
     height: 53px;
     background: #212121;
-    z-index: 3;
-    width:100%;
 }
 
 .header a {
@@ -40,22 +44,19 @@
 /* SUBHEADER */
 
 .subheader {
-    top:53px;
     height: 87px;
     background-color: rgba(0, 0, 0, 0.6);
-    position: relative;
+    position: absolute;
+    width:100%;
 }
 
 .subheader .subheader_bck {
-    position: absolute;
     width: 1920px;
     height: 799px;
-    z-index: -1;
 }
 
 .subheader .row {
     padding-top: 20px;
-    z-index: 2;
 }
 
 .subheader_logo_text {
@@ -94,8 +95,14 @@
 
 /* MAIN SECTION */
 
+.main {
+    background: url(../img/background/uber_bg.png) center center/cover no-repeat;
+    min-height: 800px;
+    
+}
+
 .main_header {
-    margin-top: 67px;
+    padding-top: 154px;
     font-weight: 900;
     font-size: 60px;
     text-align: center;
