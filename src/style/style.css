@@ -11,6 +11,7 @@
 
 header {
     position: relative;
+    z-index: 3;
 }
 
 .header .container {
@@ -49,6 +50,7 @@ header {
     position: absolute;
     width: 100%;
     top: 53px;
+    z-index: -1;
 }
 
 .subheader .subheader_bck {
@@ -99,7 +101,7 @@ header {
 .main {
     background: url(../img/background/uber_bg.png) center center/cover no-repeat;
     min-height: 800px;
-
+    z-index: 1;
 }
 
 .main_header {
