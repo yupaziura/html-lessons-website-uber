@@ -139,6 +139,13 @@ header
     text-align: center
     text-transform: uppercase
     color: #222222
+    &_negative
+        font-weight: bold
+        font-size: 38px
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        margin-top: 26px
 
 .reason_icon
     width: 116px
@@ -170,24 +177,42 @@ header
     display: flex
     justify-content: center
 
-.button_black
-    width: 115px
-    height: 27px
-    background: #000000
-    font-weight: normal
-    font-size: 11px
-    text-align: center
-    text-transform: uppercase
-    color: #FFFFFF
-    border: 0
-    display: block
-    margin: 20px auto
+.button
+    &_black
+        width: 115px
+        height: 27px
+        background: #000000
+        font-weight: normal
+        font-size: 11px
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        border: 0
+        display: block
+        margin: 20px auto
+    &_white
+        width: 115px
+        height: 27px
+        background: #FFFFFF
+        font-weight: normal
+        font-size: 11px
+        text-align: center
+        text-transform: uppercase
+        color: #070716
+        display: block
+        margin: 0 auto
+        border: 0
 
 .description
     font-weight: normal
     font-size: 17px
     text-align: center
     color: #222222 
+    &_negative
+        font-weight: normal
+        font-size: 17px
+        text-align: center
+        color: #FFFFFF
 
 .mobile
     min-height: 864px
@@ -234,4 +259,32 @@ header
         img
             width: 60%
             cursor: pointer
+
+.choice
+    &_bg_dark
+        min-height: 502px
+        width: 100%
+        background: #070716
+        padding-top: 54px
+    &_bg_light
+        min-height: 397px
+
+.choice_bg_dark
+    position: relative
+    img
+        display: block
+        position: absolute
+        top: 231px
+        left: 50%
+        transform: translateX(-50%)
+
+.choice_text
+    font-weight: 300
+    font-size: 17px
+    text-align: center
+    color: #222222
+    margin: 210px 0 138px 0
+        
+
+
    
