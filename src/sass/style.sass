@@ -1,6 +1,12 @@
 $color_blue: #1EACC7
 $color_red: #FF5656
-    
+
+@mixin hover_btn
+    &:hover
+        background-color: $color_blue
+        background-image: none
+        
+
     
 *
     font-family: Roboto
@@ -84,6 +90,8 @@ header
     text-transform: uppercase
     color: #FFFFFF
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    @include hover_btn
+    
 
 /* MAIN SECTION
 
@@ -129,6 +137,8 @@ header
     text-transform: uppercase
     color: #FFFFFF
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    @include hover_btn
+    
 
 /* REASON SECTION
 
@@ -260,9 +270,32 @@ header
         display: flex
         justify-content: center
         align-items: center
-        img
-            width: 60%
-            cursor: pointer
+        cursor: pointer
+        transition: 0.5s all
+        &::before
+            content: ''
+            display: block
+            width: 2px
+            height: 14px
+            background-color: $color-blue
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            transition: 0.5s all
+        &::after
+            content: ''
+            display: block
+            height: 2px
+            width: 14px
+            background-color: $color-blue
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            transition: 0.5s all
+        &:hover
+            &::before, &::after
+                background-color: #fff
+            box-shadow: 0 0 10px #fff
 
 .choice
     &_bg_dark
