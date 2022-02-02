@@ -307,7 +307,7 @@ header
         background: #070716
         padding-top: 54px
     &_bg_light
-        min-height: 397px
+        min-height: 184px
 
 .choice_bg_dark
     position: relative
@@ -323,7 +323,52 @@ header
     font-size: 17px
     text-align: center
     color: #222222
-    margin: 210px 0 138px 0
+    margin: 210px 0 0 0
+
+.require
+    .container
+        padding: 0 7px 0 7px
+    min_height: 917px
+    .blue
+        margin-top: 33px
+    .red
+        margin-top: 61px
+    &_header
+        font-style: normal
+        font-weight: normal
+        font-size: 22px
+        &_blue
+            color: $color-blue
+        &_red
+            color: $color_red
+    .payrate
+        font-weight: 300
+        font-size: 17px
+        color: #1CA8C3
+    .require_list
+        margin-top: 22px
+        font-weight: 300
+        font-size: 17px
+        color: #222222
+        line-height: 24px
+        list-style: none
+        padding-left: 20px
+        li
+            margin-bottom: 6px
+            position: relative
+            &::before
+                position: absolute
+                left: -30px
+                top: 3px
+                content: ''
+                display: block
+                width: 21px
+                height: 21px
+                background: url(../img/icons/check_blue.png) center center/cover no-repeat
+
+        .require_list_item_red
+            &::before
+                background: url(../img/icons/check_red.png) center center/cover no-repeat
         
 
 
