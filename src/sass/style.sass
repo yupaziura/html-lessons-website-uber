@@ -301,31 +301,32 @@ header
             box-shadow: 0 0 10px #fff
 
 .choice
+    &_main
+        position: relative
     &_bg_dark
         min-height: 502px
         width: 100%
         background: #070716
         padding-top: 54px
-    &_bg_light
-        min-height: 184px
-
-.choice_bg_dark
-    position: relative
-    img
+    &_car
         display: block
         position: absolute
         top: 231px
         left: 50%
         transform: translateX(-50%)
+.choice_bg_light
+    height: 397px
+    background: url(../img/background/mobile_bg.png) center center/cover no-repeat
 
 .choice_text
     font-weight: 300
     font-size: 17px
     text-align: center
     color: #222222
-    margin: 210px 0 0 0
+    padding: 210px 0 0 0
 
 .require
+    padding-bottom: 87px
     .container
         padding: 0 7px 0 7px
     min_height: 917px
