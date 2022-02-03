@@ -396,26 +396,39 @@ header
 .footer
     min-height: 156px
     padding: 13px 21px 37px 23px
-    &_main
-        display: flex
-        justify-content: space-between
-        align-items: center
-        margin-top: 32px
-    &_media
-        width: 35px
-        height: 35px
-        background-color: black
-        display: block
-        border-radius: 100%
-        margin-left: 4px
-        text-decoration: none
-        display: inline-block
-
     &_line
         width: 299px
         height: 4px
         background: #1FBAD6
         margin: 0 auto
+
+    &_main
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 32px
+
+    &_start
+        width: 420px
+        display: flex
+        justify-content: left
+    &_media
+        width: 35px
+        height: 35px
+        background-color: black
+        border-radius: 100%
+        margin-right: 8px
+        text-decoration: none
+        display: flex
+        justify-content: center
+        align-items: center
+        span
+            margin: 0
+            padding: 0
+            &::before
+                color: #fff
+                text-decoration: none
+                display: block
 
     &_mid
         display: flex
@@ -452,10 +465,7 @@ header
                 color: #1FBAD6
                 margin-top: 18px
                 text-decoration: none
-    &_start
-        width: 420px
-        div
-            display: inline-block
+                
     &_end
         width: 420px
         img
