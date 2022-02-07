@@ -21,27 +21,35 @@
         <header>
             <div class="header">
                 <div class="container">
-                    <a href="#">Главная</a>
-                    <a href="#">Со своим автомобилем</a>
-                    <a href="#">На автомобиле компании</a>
-                    <a href="#">Требования</a>
-                    <a href="#">Контакты</a>
-                    <a href="#">Оставить заявку</a>
+                    <a class="c_item" href="#">Главная</a>
+                    <a class="c_item" href="#">Со своим автомобилем</a>
+                    <a class="c_item" href="#">На автомобиле компании</a>
+                    <a class="c_item" href="#">Требования</a>
+                    <a class="c_item" href="#">Контакты</a>
+                    <a class="c_item" href="#">Оставить заявку</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
 
             <div class="subheader">
                 <div class="container">
                     <div class="row">
-                        <div class="col-4 offset-md-1">
+                        <div class=" col-6 col-md-4 offset-md-1">
                             <img src="./img/logo/Uber.png" alt="logo" class="subheader_image">
-                            <div class="subheader_logo_text">Официальный партнер Uber в Москве</div>
+                            <div class="xs-hidden subheader_logo_text">Официальный партнер Uber в Москве</div>
                         </div>
-                        <div class="col-md-3 offset-md-1 col-xl-2 offset-xl-2">
+                        <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
                             <div class="subheader_tel_text">Звоните нам ежедневно</div>
                             <div class="subheader_tel">8 495 797 09 88</div>
                         </div>
-                        <div class="col-lg-2 col-md-3"> <button class="subheader_btn">заказать звонок</button></div>
+                        <div class="col-6 col-lg-2 col-md-3">
+                            <div class="xs-visible subheader_tel">8 495 797 09 88</div>
+                            <button class="subheader_btn">заказать звонок</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -55,7 +63,7 @@
                 <div class="main_subheader">
                     ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!
                 </div>
-                <div class="main_text">
+                <div class="main_text xs-hidden">
                     Компания UBER динамически развивающаяся. Компания на рынке занимает лидирующее место среди
                     таксомоторных
                     компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном
@@ -146,37 +154,37 @@
                     мобильный
                     телефон</div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-5 ">
+                    <div class="col-xs-6 col-lg-4 col-md-5 ">
                         <div class="mobile_item mobile_item_1">
                             <div class="mobile_header">оформление заказа одним касанием</div>
                             <div class="mobile_img"> </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-5 ">
+                    <div class="col-xs-6 col-lg-4 col-md-5 ">
                         <div class="mobile_item mobile_item_2">
                             <div class="mobile_header">надежная подача</div>
                             <div class="mobile_img"> </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-5 ">
+                    <div class="col-xs-6 col-lg-4 col-md-5 ">
                         <div class="mobile_item mobile_item_3">
                             <div class="mobile_header">прозрачные цены</div>
                             <div class="mobile_img"> </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-5 ">
+                    <div class="col-xs-6 col-lg-4 col-md-5 ">
                         <div class="mobile_item mobile_item_4">
                             <div class="mobile_header">безналичная оплата</div>
                             <div class="mobile_img"> </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-5 ">
+                    <div class="col-xs-6 col-lg-4 col-md-5 ">
                         <div class="mobile_item mobile_item_5">
                             <div class="mobile_header">обратная связь</div>
                             <div class="mobile_img"> </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-5 ">
+                    <div class="col-xs-6 col-lg-4 col-md-5 ">
                         <div class="mobile_item mobile_item_6">
                             <div class="mobile_header">разделить стоимость поездки</div>
                             <div class="mobile_img"> </div>
@@ -192,13 +200,19 @@
                 <div class="choice_bg_dark">
                     <div class="container">
                         <div class="label_white">Возможности</div>
-                        <div class="title_negative">Выбор - отличная штука!</div>
-                        <div class="description_negative">Закажите автомобиль, который подходит вам по стилю и бюджету
+                        <div class="title_negative xs-hidden">Выбор - отличная штука!</div>
+                        <div class="description_negative xs-hidden">Закажите автомобиль, который подходит вам по стилю и
+                            бюджету
                         </div>
                         <img src="./img/background/car_bg.png" alt="uber_car" class="choice_car">
+                        <div class="container xs-visible">
+                            <div class="choice_text">Машины на каждый день.<br> Лучше, быстрее и дешевле, чем такси
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="choice_bg_light">
+                <div class="choice_bg_light xs-hidden">
                     <div class="container">
                         <div class="choice_text">Машины на каждый день.<br> Лучше, быстрее и дешевле, чем такси</div>
                     </div>
@@ -238,7 +252,7 @@
                                 ные дни вы работаете на себя</li>
                         </ul>
                     </div>
-                    
+
                 </div>
                 <div class="row red justify-content-around">
                     <div class="col-lg-6 col-md-5">
@@ -282,7 +296,7 @@
         <footer class="footer">
             <div class="footer_line"></div>
             <div class="footer_main">
-                <div class="footer_start">
+                <div class="footer_start xs-hidden">
                     <a href="#" class="footer_media"><span class="icon-facebook"></span></a>
                     <a href="#" class="footer_media"><span class="icon-twitter"></span></a>
                     <a href="#" class="footer_media"><span class="icon-linkedin2"></span></a>
@@ -305,13 +319,19 @@
                         <a href="" class="footer_text">русский</a>
                     </div>
                 </div>
-                <div class="footer_end">
+                <div class="footer_start xs-visible">
+                    <a href="#" class="footer_media"><span class="icon-facebook"></span></a>
+                    <a href="#" class="footer_media"><span class="icon-twitter"></span></a>
+                    <a href="#" class="footer_media"><span class="icon-linkedin2"></span></a>
+                    <a href="#" class="footer_media"><span class="icon-instagram"></span></a>
+                </div>
+                <div class="footer_end ">
                     <img src="./img/icons/download.png" alt="">
                 </div>
             </div>
         </footer>
 
-
+        <script src="js/script.js"></script>
 
     </body>
 
